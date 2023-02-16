@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08testfor.html</title>
+    <style>
+        *{font-size: 14pt;}
+    </style>
+    
+    <script>
+        function mytest(){
+            var su=0 ;
+            var result='';
+                              //이쪽에 su=su+num 넣으면 X
+            for(var k=1; k<11; k=k+1){
+            su=su+3; // su 변수를  서식 위에넣으면 5 5 5 5 5 만 나옴 따라서 위에 su는 하나만두고 for안에 넣기
+            if(su==27){break;}
+            // document.write((su),' '); // 기존에 안내문 다 지워짐
+            result=result+su+' ';
+            document.getElementById('display').innerHTML=result;
+            
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>08testfor.html</h2>
+    <div id="display">
+        <img src="./images/apple.png" alt="">
+    </div>
+    <button onclick="mytest()">mytest</button>
+</body>
+</html>
